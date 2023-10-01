@@ -1,0 +1,25 @@
+spring:
+  config:
+    import: authentication.yml
+
+  datasource:
+    username: practice_account
+    password: Sks123123123!
+    url: jdbc:mysql://localhost:3306/carrotauction?createDatabaseIfNotExist=true&serverTimezone=UTC&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    showSql: true
+    hibernate:
+      ddl-auto: create
+
+    properties:
+      hibernate:
+        format_sql:true
+
+auth:
+  jwt:
+    rtk: Refresh-Authorization
+    secretKey: THISISSECRETKEY
+    type : Bearer
+  field: Authorization
