@@ -16,8 +16,24 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	//lombok
+
+	implementation "org.springframework.boot:spring-boot-starter-security"
+	//spring security
+
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+	//jwt
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	//jpa
+
+	implementation 'mysql:mysql-connector-java:8.0.33'
+	//mysql
 }
 
 tasks.named('test') {

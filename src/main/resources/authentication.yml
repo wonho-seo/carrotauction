@@ -1,0 +1,6 @@
+auth:
+  jwt:
+    rtk: Refresh-Authorization
+    secretKey: THISISSECRETKEY
+    type : Bearer
+  field: Authorization
